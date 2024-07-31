@@ -1,0 +1,77 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.to-do-list {
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-button {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  background-color: rgb(51, 236, 51);
+}
+
+.delete-button {
+  background-color: red;
+}
+
+.move-button {
+  background-color: aqua;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 300px;
+}
+
+ol {
+  padding: 0;
+}
+
+li {
+  border: 2px solid white;
+  padding: 20px;
+  margin-left: 75px;
+  margin-right: 75px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.text {
+  flex: 1;
+  font-size: 2rem;
+}
+
+/* Add this CSS to your stylesheet or in the same file using styled-components or similar */
+@keyframes fadeOut {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: red;
+    opacity: 0;
+  }
+}
+
+.fade-out {
+  animation: fadeOut 1s forwards;
+}
