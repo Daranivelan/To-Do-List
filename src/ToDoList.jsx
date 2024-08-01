@@ -75,15 +75,23 @@ export default function ToDoList() {
         {tasks.map((task, index) => (
           <li key={index} id={`task-${index}`}>
             <span className="text">{task}</span>
-            <button className="delete-button" onClick={() => removeTask(index)}>
-              Delete
-            </button>
-            <button className="move-button" onClick={() => moveTaskup(index)}>
-              Move Up
-            </button>
-            <button className="move-button" onClick={() => moveTaskdown(index)}>
-              Move Down
-            </button>
+            <div className="buttons">
+              <button
+                className="delete-button"
+                onClick={() => removeTask(index)}
+              >
+                Delete
+              </button>
+              <button className="move-button" onClick={() => moveTaskup(index)}>
+                ☝🏻
+              </button>
+              <button
+                className="move-button"
+                onClick={() => moveTaskdown(index)}
+              >
+                👇🏻
+              </button>
+            </div>
           </li>
         ))}
       </ol>

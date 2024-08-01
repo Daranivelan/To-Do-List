@@ -30,7 +30,12 @@ button {
 }
 
 .move-button {
-  background-color: aqua;
+  background-color: rgb(127, 123, 118);
+}
+
+.move-button,
+.delete-button {
+  margin: 10px 20px;
 }
 
 input[type="text"] {
@@ -47,18 +52,36 @@ ol {
 li {
   border: 2px solid white;
   padding: 20px;
-  margin-left: 75px;
-  margin-right: 75px;
-  margin-bottom: 10px;
-  border-radius: 10px;
+  width: 80%;
+  margin: 10px auto;
   display: flex;
   align-items: center;
   gap: 10px;
+  justify-content: space-around;
 }
 
 .text {
-  flex: 1;
   font-size: 2rem;
+}
+
+@media (max-width: 550px) {
+  .text {
+    font-size: 1rem;
+  }
+  li {
+    width: 70%;
+    flex-direction: column;
+    padding: 10px 5px;
+  }
+  .move-button,
+  .delete-button {
+    width: 25%;
+    font-size: 0.8rem;
+    margin: 0 10px;
+  }
+  .buttons {
+    width: 100%;
+  }
 }
 
 /* Add this CSS to your stylesheet or in the same file using styled-components or similar */
